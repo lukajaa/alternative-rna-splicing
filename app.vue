@@ -145,7 +145,7 @@ Flies contain 6 exons
           </pre>
         </div>
       <div class="text-center caption p-5">
-        Created by <a href="https://www.lucaskchang.com" target="_blank">Lucas Chang</a> and Nuri Tam. Made with Nuxt.js and Tailwind CSS.
+        Created by <a href="https://www.lucaskchang.com" target="_blank">Lucas Chang</a> and Nuri Tam. Made with <a href="https://github.com/lukajaa/alternative-rna-splicing" target="_blank">Nuxt.js and Tailwind CSS</a>.
       </div>
     </div>
   </div>
