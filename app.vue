@@ -15,7 +15,7 @@
       </div>
       <p class="text-xl text-center yellow-text mt-5">Spliceosome</p>
       <p class="caption mt-5">
-        The spliceosome is a complex of proteins and snRNAs. Its six complexes recognize the splice sites of the exon and cut and bind them together.
+        The spliceosome's six complexes recognize the splice sites of the exon and cut and bind them together.
       </p>
       <div class="flex flex-row caption mt-10">
         <div class="flex flex-col">
@@ -30,7 +30,7 @@
         </div>
         <div class="flex flex-col justify-center mx-5">
           <p class="text-center caption">
-            The U1 and U2 snRNPs identify the edges of the exon by recognizing the 5' and 3' splice sites. They do this by binding to the respective GU (5') or AG (3') sequences on the edges of the exons. These two sequences appear on 99% of all eukaryotic genes.
+            The U1 and U2 snRNPs identify the edges of the exon by recognizing the 5' and 3' splice sites with their snRNA. They do this by binding to the respective GU (5') or AG (3') sequences present on the edges of 99% of exons.
           </p>
         </div>
       </div>
@@ -62,7 +62,7 @@
         <div class="flex flex-col justify-center w-5/12">
           <p class="yellow-text text-2xl">snRNA</p>
           <p class="caption text-md">
-            snRNA is a small nuclear RNA that makes up part of the spliceosome. Its function as an RNA is imperative to the splicing process because it can recognize the splice sites by matching nucleotide sequences.
+            snRNA is RNA that makes up part of the spliceosome. Its function as an RNA is imperative to the splicing process because it can recognize the splice sites by matching nucleotide sequences.
           </p>
         </div>
         <div class="flex flex-col justify-center w-2/12">
@@ -82,11 +82,11 @@
       <div class="flex flex-col items-center">
           <div class="flex flex-col justify-center">
             <p class="text-center caption">
-              The Fas receptor promotes apoptosis or the programmatic killing of cells. In the case of the Fas receptor, pre-cancerous skin cells are being killed. 
-              When Exon 6 is excluded, the Fas receptor becomes soluble and dissolves, unable to bind to the Fas ligand and promote apoptosis.
+              The Fas receptor promotes apoptosis -- the programmatic killing of cells -- for cancer cells.
+              When Exon 6 is excluded, the Fas receptor becomes soluble and dissolves, making it unable to promote apoptosis.
             </p>
           </div>
-        <p class="text-center mt-5 caption"><span class="font-black text-red-500">TIA-1</span> and <span class="font-black text-green-300">PTB</span> are two antagonistic proteins that affect how the snRNP binds to the exon.</p>
+        <p class="text-center mt-5 caption"><span class="font-black text-green-400">TIA-1</span> and <span class="font-black text-red-500">PTB</span> are two antagonistic proteins that affect how the snRNP binds to the exon.</p>
 
         <div class="flex flex-row">
           <div class="flex flex-col">
@@ -124,26 +124,35 @@
       </div>
 
       <p class="text-xl text-center yellow-text mt-5 italic"> drosophila dsx </p>
-        <div>
-          <img src="~/assets/images/DSX.png" class="float-left max-w-sm mr-10" />
-          <pre class="caption">
-Flies contain 6 exons
-    - Male → exons 1, 2, 3, 5, 6 joined
-        - Skipped exon 4 
-        - Exon 4 has a polyprimidine tract → located near the 3' SS 
-            - during splicing, the polyprimidine tract acts as a signal for the splicesome to recognize it so that it can cut from the correct SS
-        - But the polyprimidine tract is weak bc doesn't match the nucleotide sequence well = the U2AF doesn't bind well 
-            - U2AF → protein that recognizes specific sequence in the polyprimidine tract + recruits and accurately positions snRNP to the correct site 
-        - overall: males don't use the 3' SS
-    - Female → exons 1, 2, 3, 4 joined 
-        - Females produce splicing activator (Transformer → Tra)
-        - Polyadenlyation signal causes the exon 4 to cut off from the mRNA 
-            - Polyadenlyation → addition of poly (A) tail to mRNA
-            - Protein Tra2 (in the SR protein family) is produced in both sexes + binds to exonic splicing enhancers (sequences of nucloetides in pre-mRNA that enhance efficiency of splicing) in exon
-            - If Tra is present, it binds to Tra2 with another SR protein
-                - forms complex that helps U2AF bind to weak polyprimidine tract 
-          </pre>
+        <div class="flex flex-row">
+          <div class="flex flex-col justify-center">
+            <img src="~/assets/images/DSX.png" class="float-left max-w-sm mr-10" width=""/>
+          </div>
+          <div class="flex flex-col">
+            <pre class="caption">
+Why does exon 4 get cut off for male flies?
+    - No splicing activator
+    - during splicing, the polypyrimidine tract acts as a signal for the splicesome to recognize it so that it can cut from the correct SS
+    - Exon 4 has a weak polypyrimidine tract (meaning it doesn't match the nucleotide sequence on the SS well) → the U2AF doesn't bind well 
+        - U2AF → protein that recognizes specific sequence in the polypyrimidine tract + recruits and accurately positions snRNP to the correct site 
+    - When U2AF doesn't bind well → 3' SS on that exon is not cut
+            </pre>
+          </div>
         </div>
+        <div class="flex flex-row">
+          <div class="flex flex-col justify-center">
+            <img src="~/assets/images/DSX_1.png" class="float-left max-w-sm mr-10" />
+          </div>
+          <div class="flex flex-col">
+          <pre class="caption">
+Why is exon 4 included for female flies?
+    - Females produce splicing activator → Tra
+        - If Tra is present in exon 4, it binds to Tra2 with another SR protein (certain fam of protein)
+            - Protein Tra2 is produced in both sexes + binds to exonic splicing enhancers (ESE = sequences of nucleotides in pre-mRNA that enhance the efficiency of splicing) in exon
+            - forms a complex that helps U2AF bind to weak polypyrimidine tract ⇒ splicing is normal
+          </pre>
+          </div>
+          </div>
       <div class="text-center caption p-5">
         Created by <a href="https://www.lucaskchang.com" target="_blank">Lucas Chang</a> and Nuri Tam. Made with <a href="https://github.com/lukajaa/alternative-rna-splicing" target="_blank">Nuxt.js and Tailwind CSS</a>.
       </div>
