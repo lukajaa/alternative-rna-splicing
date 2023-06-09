@@ -4,9 +4,11 @@ export default defineNuxtConfig({
         '@nuxtjs/tailwindcss',
         'nuxt-gtag'
     ],
-    head: {
-        title: 'Alternative RNA Splicing',
-    },
+    app: {
+        head: {
+            title: 'Alternative RNA Splicing',
+        },
+    }
     gtag: {
         id: 'G-QNLZ5NY7HH'
     }
