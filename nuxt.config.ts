@@ -8,7 +8,7 @@ export default defineNuxtConfig({
         head: {
             title: 'Alternative RNA Splicing',
         },
-    }
+    },
     gtag: {
         id: 'G-QNLZ5NY7HH'
     }
